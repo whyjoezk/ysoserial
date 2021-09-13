@@ -146,3 +146,38 @@ $ nc 10.10.10.10 1099 < groovypayload.bin
 
 $ java -cp ysoserial.jar ysoserial.exploit.RMIRegistryExploit myhost 1099 CommonsCollections1 calc.exe
 ```
+
+## Installation
+
+1. Download the latest jar from
+[JitPack](https://jitpack.io/com/github/frohoff/ysoserial/master-SNAPSHOT/ysoserial-master-SNAPSHOT.jar)
+[![Download Latest Snapshot](https://img.shields.io/badge/download-master-green.svg)](
+    https://jitpack.io/com/github/frohoff/ysoserial/master-SNAPSHOT/ysoserial-master-SNAPSHOT.jar)
+
+Note that GitHub-hosted releases were removed in compliance with the
+[GitHub Community Guidelines](
+    https://help.github.com/articles/github-community-guidelines/#what-is-not-allowed)
+
+## Building
+
+Requires Java 1.7+ and Maven 3.x+
+
+```mvn clean package -DskipTests```
+
+## Code Status
+
+[![Build Status](https://travis-ci.org/frohoff/ysoserial.svg?branch=master)](https://travis-ci.org/frohoff/ysoserial)
+[![Build status](https://ci.appveyor.com/api/projects/status/a8tbk9blgr3yut4g/branch/master?svg=true)](https://ci.appveyor.com/project/frohoff/ysoserial/branch/master)
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## See Also
+* [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet): info on vulnerabilities, tools, blogs/write-ups, etc.
+* [marshalsec](https://github.com/frohoff/marshalsec): similar project for various Java deserialization formats/libraries
+* [ysoserial.net](https://github.com/pwntester/ysoserial.net): similar project for .NET deserialization
