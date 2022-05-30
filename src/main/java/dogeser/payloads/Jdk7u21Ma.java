@@ -1,7 +1,9 @@
 package dogeser.payloads;
 
 import java.lang.reflect.InvocationHandler;
+import java.rmi.MarshalledObject;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.LinkedHashSet;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutput;
